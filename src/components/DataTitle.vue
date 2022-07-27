@@ -1,6 +1,8 @@
 <template>
   <div class="text-center">
-    <h2 class="text-3xl font-bold">{{ text }}</h2>
+    <h2 class="text-3xl font-bold">
+      {{ text }} <i class="fa fa-globe text-green-600" aria-hidden="true"></i>
+    </h2>
     <div class="text-2xl mt-4 mb-10">
       {{ timestamp }}
     </div>
@@ -8,17 +10,18 @@
 </template>
 
 <script>
-import dayjs from 'dayjs';
-import { computed } from 'vue';
+import dayjs from "dayjs";
+import { computed } from "vue";
 
 export default {
-  name: 'DataTitle',
-  props: ['text', 'dataDate'],
-  setup ({ dataDate }) {
+  name: "DataTitle",
+  props: ["text", "dataDate"],
+  setup({ dataDate }) {
     return {
-      timestamp: computed(() => dayjs(dataDate)
-        .format('MMMM D YYYY, h:mm:ss a'))
+      timestamp: computed(() =>
+        dayjs(dataDate).format("MMMM D YYYY, h:mm:ss a")
+      ),
     };
-  }
+  },
 };
 </script>
