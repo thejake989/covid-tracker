@@ -3,7 +3,7 @@
     <!-- Box 1 -->
     <div class="shadow-md bg-blue-100 p-10 text-center rounded">
       <!--Cases-->
-      <h3 class="text-3xl text-blue-900 font-bold mb-4 ">Cases</h3>
+      <h3 class="text-3xl text-green-900 font-bold mb-4 ">Cases</h3>
 
       <!--New-->
       <div class="text-2xl mb-4">
